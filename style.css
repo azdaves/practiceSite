@@ -1,0 +1,66 @@
+/* Web Fonts -------------------- */
+
+@font-face {
+  font-family: 'Abolition Regular';
+  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: #878787;
+  margin: 0;
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a { 
+
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	
+}
+
+.main-footer {
+	
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media (min-width: 576px) {
+
+  .wrap {
+    min-height: calc(100vh-24px); /* to force the footer to the bottom vh is a viewport relative unit. Using calc to do the calculation of the 89px of our footer*/
+  }
+
+  .container {
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+}

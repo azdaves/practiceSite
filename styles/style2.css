@@ -2,6 +2,10 @@
   Base Element Styles
 ==================================== */
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	line-height: 1.6;
 	color: #3a3a3a;
@@ -16,21 +20,62 @@ a {
   Base Layout Styles
 ==================================== */
 
+/* ---- Navigation ---- */
+
+.name {
+	margin: 0;
+}
+
+.name, 
+.main-nav li {
+	text-align: center;
+	background: rgb(168, 113, 113);
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.name a,
+.main-nav a {
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
 /* ---- Layout Containers ---- */
 
-.wrapper {
-	width: 70%;
-	margin: 0 auto;
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .main-header {
 	background: #3acec2;
+	padding: 1em 0;
 }
 
 .main-footer {
+	text-align: center;
 	padding: 2em 0;
 	background: #d9e4ea;
 }
 
-/* ---- Page Elements ---- */
+/* ================================= 
+  Media Queries
+==================================== */
 
+@media (min-width: 769px) {
+	.container {
+		width: 70%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.name,
+	.main-nav,
+	.main-nav li {
+		display: inline;
+	}
+
+	.name {
+		margin-right: 50px;
+	}
+}
